@@ -1,7 +1,7 @@
 parallel conjugate gradient solver
 ===================================
-this is a conjugate gradient solver for large sparse matrix. ie, to get x in Ax = b.
-read data from "matrix", save result in "ans"
+This is a conjugate gradient solver for large sparse matrix. ie, to get x in Ax = b.
+Read data from "matrix", save result in "ans".
 
 ### generate N*N matrix
 		python Random_matrix.py N
@@ -14,6 +14,6 @@ read data from "matrix", save result in "ans"
 		mpic++ MPI_Conjugate.cpp -o mpi_conjugate
 		mpiexec -n 2 ./mpi_conjugate N -t -d
 
-### to validate if the result is right
+### validate if the result is right
 		g++ Validation.cpp -o validation
 		./validation
